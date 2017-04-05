@@ -1,0 +1,110 @@
+@mixin firstpageP {
+  font-size:26px;
+  font-family:OpenSans-Light;
+  color:white;
+  text-transform:uppercase;
+}
+
+@mixin sectionHeading {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:36px;
+  font-family:OpenSans-Light;
+  font-style: italic;
+  color:#333333;
+  text-align:center;
+  margin:55px auto;
+  h2 {
+    padding:30px 0px;
+  }
+}
+
+@mixin center {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+@mixin content {
+  display:flex;
+  justify-content:space-between;
+  position:relative;
+}
+
+@mixin H5 {
+  font-size:28px;
+  font-family:Lato-Black;
+  color:#dc0000;
+  text-transform:uppercase;
+  margin-top:25px;
+}
+
+@mixin itemsH6 {
+  font-size:18px;
+  font-family:OpenSans;
+  color:#a7a7a7;
+  text-transform:uppercase;
+  margin:27px 0px;
+}
+
+@mixin itemsP {
+  font-size:18px;
+  font-family:Lato-Regular;
+  color:#777777;
+  &:nth-child(4) {
+    margin-top:24px;
+  }
+  &:nth-child(7) {
+    margin-bottom:24px;
+  }
+  &:nth-child(9) {
+    margin-bottom:24px;
+  }
+}
+
+@mixin buttonP {
+  font-size:20px;
+  font-family:OpenSans-Bold;
+  color:#333333;
+}
+
+@mixin blogH6 {
+  font-size:16px;
+  font-family:Lato-Regular;
+  color:#6e6e6e;
+  margin:28px 0px;
+}
+
+@mixin blogP {
+  font-size:18px;
+  font-family:OpenSans-Light;
+  color:#b6b6b6;
+  border-top:1px solid #ecf0f1;
+  border-bottom:1px solid #ecf0f1;
+  padding:32px 0px;
+  &:nth-child(4) {
+    margin:28px 0px;
+  }
+}
+
+@mixin moreP {
+  font-size:20px;
+  font-family:OpenSans-Bold;
+  text-transform:uppercase;
+  height:50px;
+  line-height:50px;
+  width:170px;
+  text-align:center;
+  border:1px solid black;
+  color:#333333;
+  padding:0px;
+}
+
+@mixin hoverH {
+  font-size:2em;
+  transition:1s;
+  color:#DADADA;
+  text-shadow: 6px 7px 2px rgba(0,0,0,0.8), 3px 3px 3px #000000;
+}

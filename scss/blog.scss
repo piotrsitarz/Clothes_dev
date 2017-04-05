@@ -1,0 +1,47 @@
+#blog {
+  max-width:1170px;
+  margin:0 auto;
+  #flex {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    .column {
+      display:flex;
+      flex-direction:column;
+      width:49%;
+      position:relative;
+      #fashion img {
+        width:100%;
+      }
+      .read {
+        width:100%;
+        height:auto;
+      }
+      #sunglasses img{
+        width:100%;
+      }
+    }
+    h5 {
+      @include H5;
+    }
+    h6 {
+      @include blogH6;
+    }
+    p {
+      @include blogP;
+    }
+    .more {
+      margin:60px 0px;
+      p {
+        @include moreP;
+        transition:0.3s;
+        &:hover {
+          cursor:pointer;
+          border:1px solid white;
+          background:#dc0000;
+          color:white;
+        }
+      }
+    }
+  }
+}

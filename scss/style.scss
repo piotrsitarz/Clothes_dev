@@ -1,0 +1,66 @@
+@import "variables";
+@import "mixins";
+@import "firstpage.scss";
+@import "products.scss";
+@import "items.scss";
+@import "blog.scss";
+@import "subscribe.scss";
+@import "RWD.scss";
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    width: 100%;
+}
+
+@font-face {
+  font-family:Lato-Black;
+  src: url('../fonts/Lato-Black.ttf');
+}
+
+@font-face {
+  font-family:Lato-Regular;
+  src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family:OpenSans-Light;
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family:OpenSans-Bold;
+  src:url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family:OpenSans;
+  src:url('../fonts/OpenSans-Regular.ttf');
+}
+
+  .heading {
+    @include sectionHeading;
+  }
+
+  .content {
+    @include content;
+  }
+
+#footer {
+  height:160px;
+  @include center;
+  p {
+    font-size:16px;
+    font-family:Lato-Regular;
+    color:#9a9a9a;
+  }
+  img {
+    position:relative;
+    top:3px;
+    padding:0px 2px;
+  }
+}

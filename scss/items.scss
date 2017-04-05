@@ -1,0 +1,66 @@
+#items {
+  background:url('../img/bgitems.jpg');
+  height:917px;
+  box-sizing:border-box;
+  overflow:hidden;
+  #jacket {
+    margin-right:15px;
+  }
+  #description {
+    margin-left:15px;
+  }
+  .content {
+    max-width:1170px;
+    margin:0 auto;
+    justify-content:center;
+    h5 {
+      @include H5;
+    }
+    h6 {
+      @include itemsH6;
+    }
+    p {
+      @include itemsP;
+    }
+    .button {
+      display:flex;
+      justify-content:space-between;
+      max-width:370px;
+      p {
+        @include buttonP;
+        &:hover {
+          color:white;
+        }
+      }
+      .small {
+        height:50px;
+        line-height:50px;
+        width:70px;
+        border:1px solid black;
+        text-align:center;
+        text-transform:uppercase;
+        transition:0.3s;
+        &:hover {
+          cursor:pointer;
+          border:1px solid #777;
+          background:black;
+        }
+      }
+      .large {
+        height:50px;
+        line-height:50px;
+        width:170px;
+        border:1px solid black;
+        text-align:center;
+        text-transform:uppercase;
+        margin-top:27px;
+        transition:0.3s;
+        &:hover {
+          cursor:pointer;
+          border:1px solid #777;
+          background:black;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+#subscribe {
+  background:url('../img/bgfooter.jpg');
+  height:247px;
+  position:relative;
+  #heading {
+    max-width:1170px;
+    margin:0 auto;
+    h6 {
+      font-size:18px;
+      font-family:OpenSans-Light;
+      color:#eaebec;
+      text-transform:uppercase;
+      padding-top:69px;
+    }
+  }
+  #container {
+    display:flex;
+    justify-content:space-between;
+    max-width:1170px;
+    margin:28px auto 0px;
+    input {
+      height:50px;
+      width:770px;
+      border:1px solid white;
+      background:transparent;
+      background: url('../img/email.png') no-repeat scroll 26px 19px;
+      padding-left:70px;
+      color:white;
+      font-family:OpenSans-Light;
+    }
+    #sub {
+      height:50px;
+      line-height:50px;
+      width:270px;
+      border:1px solid white;
+      background:white;
+      transition:0.3s;
+      &:hover {
+        cursor:pointer;
+        border:1px solid white;
+        background:#777;
+        color:white;
+      }
+      p {
+        font-size:20px;
+        font-family:OpenSans-Bold;
+        text-transform:uppercase;
+        text-align:center;
+      }
+    }
+  }
+}

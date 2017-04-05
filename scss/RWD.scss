@@ -1,0 +1,224 @@
+/*_____FIRSTPAGE_____*/
+@media only screen and (max-width: 1330px)  {
+
+    #firstpage header nav {
+      margin-right:50px;
+    }
+
+    #firstpage header #logo {
+      margin-left:50px;
+    }
+
+}
+
+@media only screen and (max-width: 960px)  {
+
+
+
+    #firstpage #hamburger {
+      display:block;
+      position:absolute;
+      right:10px;
+      top:24px;
+    }
+
+    #firstpage header nav ul {
+        max-height:0px;
+        display:block;
+        background:rgba(255,255,255,0.3);
+        padding-left:16px;
+    }
+
+    #firstpage header nav {
+        width:100%;
+        left:50px;
+        margin-top:30px;
+    }
+
+    #firstpage header nav ul.showing {
+        max-height:20em;
+    }
+
+    #firstpage header nav ul li{
+        box-sizing:border-box;
+        width:100%;
+        padding: 15px;
+        text-align:left;
+    }
+}
+
+/*_____PRODUCTS_____*/
+
+@media only screen and (max-width: 1188px)  {
+
+    #products .content .item {
+      width:33%;
+    }
+
+    #products .content .holder {
+      width:48%;
+    }
+}
+
+@media only screen and (max-width: 900px)  {
+
+    #products .content .item {
+      height:350px;
+    }
+
+    #products .content .holder {
+      height:350px;
+    }
+}
+
+@media only screen and (max-width: 800px)  {
+
+    #products .content {
+      flex-direction:column;
+    }
+
+    #products .content .item {
+      height:418px;
+      width:80%;
+      margin:0 auto;
+    }
+
+    #products .content #man {
+      background-position:bottom;
+    }
+
+    #products .content .holder {
+      height:418px;
+      width:80%;
+      margin:30px auto 0px;
+    }
+}
+
+/*_____ITEMS_____*/
+
+@media only screen and (max-width: 1059px)  {
+
+    #items .content  {
+      flex-direction:column;
+      background-size:contain;
+    }
+
+    #items .content #jacket {
+        margin:0 auto;
+    }
+
+    #items .content #description {
+        margin:100px auto 0px;
+    }
+
+    #items {
+      height:1450px;
+      background:url('../img/bgitemsm.jpg');
+    }
+ }
+
+ @media only screen and (max-width: 700px)  {
+
+     #items .content #jacket {
+         margin:50px auto 0px;
+         width:95%;
+     }
+
+     #items .content #jacket img {
+        height:450px;
+        width:100%;
+     }
+
+     #items .content #description .button {
+         margin-top:20px;
+     }
+  }
+
+   @media only screen and (max-width: 650px)  {
+
+     #items .content #description {
+         margin-left:20px;
+     }
+   }
+
+   @media only screen and (max-width: 461px)  {
+
+     #items {
+       height:1600px;
+       background:url('../img/bgitemsl.jpg');
+     }
+     #items .content #description .button {
+         flex-wrap:wrap;
+         @include center;
+     }
+
+     #items .content #description .button .small {
+        display:none;
+     }
+
+     #items .content #description .button .large {
+         width:49%;
+         margin:10px;
+     }
+   }
+
+   /*_____BLOG_____*/
+   @media only screen and (max-width:1171px)  {
+
+      #blog #flex {
+        justify-content:space-around;
+      }
+
+      #blog #flex .column {
+        width:48%;
+      }
+   }
+
+   @media only screen and (max-width:836px)  {
+
+     #blog #flex {
+       display:block;
+     }
+
+     #blog #flex .column {
+       width:98%;
+       @include center;
+     }
+
+     #blog #flex .column .more{
+       @include center;
+     }
+   }
+
+   /*_____SUBSCRIBE_____*/
+   @media only screen and (max-width:1200px)  {
+
+     #subscribe #heading{
+       @include center;
+     }
+
+     #subscribe #container {
+       flex-direction:column;
+       @include center;
+     }
+     #subscribe #container #email{
+       width:90%;
+       @include center;
+     }
+
+     #subscribe #container #email form{
+       width:90%;
+       @include center;
+     }
+
+     #subscribe #container #sub{
+       margin-top:11px;
+     }
+   }
+
+   @media only screen and (max-width:620px)  {
+
+      #subscribe {
+        height:285px;
+      }
+   }
